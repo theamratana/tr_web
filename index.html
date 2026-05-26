@@ -22,6 +22,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#training">Training</a></li>
         <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
       </ul>
       <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">
@@ -392,6 +393,45 @@
     </div>
   </section>
 
+  <!-- TRAINING PROFILE -->
+  <section class="section section--tinted" id="training">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Training Profile</p>
+        <h2 class="section-title">Technical Instructor &amp; Data Analytics Specialist</h2>
+        <p class="section-subtitle">Transforming complex data into actionable business intelligence — with 15+ years of hands-on teaching experience across 1,000+ learners.</p>
+      </div>
+      <div class="training-intro">
+        <p>With over 15 years of experience in technical instruction and enterprise-level data architecture, I specialize in transforming complex data into actionable business intelligence. Having successfully trained over 1,000 students at reputable institutions like <strong>ANT Training Center</strong> and <strong>IT STEP Academy</strong>, I bring a wealth of pedagogical experience, particularly in managing diverse cohorts and delivering hands-on technical training. My approach bridges the gap between raw data and executive decision-making, ensuring that participants not only learn the tools but understand how to apply them to solve real-world organizational challenges.</p>
+      </div>
+      <div class="training-grid">
+        <div class="training-block">
+          <h3 class="training-block-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Core Expertise
+          </h3>
+          <ul class="training-list">
+            <li><strong>Data Analytics &amp; Visualization:</strong> Extensive experience in Power BI, including advanced DAX, data modeling, and connecting disparate enterprise data sources (Oracle, Microsoft SQL Server, MySQL, Excel).</li>
+            <li><strong>Advanced Excel:</strong> Deep proficiency in data cleaning, complex lookups, pivot table automation, and predictive forecasting.</li>
+            <li><strong>Technical Instruction:</strong> A proven track record of teaching programming and technical concepts (C/C++, C#, SQL Server) to over 1,000 learners.</li>
+            <li><strong>Enterprise Solutions:</strong> Demonstrated ability to integrate Power BI with complex core insurance systems — specifically Oracle-based Core Insurance Systems — to deliver real-time dashboards for C-suite executives (CEO, CBO, COO), tracking critical KPIs such as Quotes, Policies, and Claims.</li>
+          </ul>
+        </div>
+        <div class="training-block">
+          <h3 class="training-block-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            Training Methodology
+          </h3>
+          <ul class="training-list">
+            <li><strong>Instructional Approach:</strong> A balanced mix of demonstration, guided practice, and independent mini projects.</li>
+            <li><strong>Mixed-Level Management:</strong> My approach involves "scaffolded learning," where core tasks are introduced for all levels, and advanced challenges are provided for senior participants to ensure maximum engagement for everyone.</li>
+            <li><strong>Real-World Application:</strong> Training incorporates datasets that mirror professional organizational challenges, ensuring participants can apply their skills immediately in their workplace.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- VISION / INVESTOR CTA -->
   <section class="section section--dark" id="vision">
     <div class="container">
@@ -496,7 +536,7 @@
         if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); }
       });
     }, { threshold: 0.08 });
-    document.querySelectorAll('.skill-card, .project-card, .venture-card, .timeline-item, .contact-card, .value-item, .stat').forEach(el => {
+    document.querySelectorAll('.skill-card, .project-card, .venture-card, .timeline-item, .contact-card, .value-item, .stat, .training-block').forEach(el => {
       el.classList.add('fade-in');
       io.observe(el);
     });

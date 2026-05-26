@@ -417,6 +417,36 @@ button { cursor: pointer; border: none; background: none; }
 .footer-copy { font-size: 13px; color: rgba(255,255,255,.3); }
 
 /* ---- FADE-IN ANIMATION ---- */
+/* ---- TRAINING PROFILE ---- */
+.training-intro { max-width: 900px; margin: 0 auto 48px; }
+.training-intro p { font-size: 17px; line-height: 1.85; color: var(--gray-700); }
+.training-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.training-block {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+.training-block-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 18px; font-weight: 700; color: var(--navy);
+  margin-bottom: 22px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--gray-100);
+}
+.training-block-title svg { color: var(--blue); flex-shrink: 0; }
+.training-list { display: flex; flex-direction: column; gap: 14px; }
+.training-list li {
+  font-size: 15px; line-height: 1.75; color: var(--text-muted);
+  padding-left: 22px; position: relative;
+}
+.training-list li::before {
+  content: '→';
+  position: absolute; left: 0; top: 1px;
+  color: var(--blue); font-size: 13px; font-weight: 700;
+}
+.training-list li strong { color: var(--gray-700); font-weight: 600; }
+
 .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
 .fade-in.visible { opacity: 1; transform: none; }
 
@@ -443,7 +473,7 @@ button { cursor: pointer; border: none; background: none; }
   .stats-inner { gap: 0; }
   .stat { padding: 12px 20px; }
   .stat-divider { display: none; }
-  .ventures-grid, .about-grid, .vision-inner { grid-template-columns: 1fr; }
+  .ventures-grid, .about-grid, .vision-inner, .training-grid { grid-template-columns: 1fr; }
   .vision-cta-box { min-width: 0; max-width: 100%; }
   .skills-grid, .projects-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid, .contact-grid--3 { grid-template-columns: 1fr 1fr; }
